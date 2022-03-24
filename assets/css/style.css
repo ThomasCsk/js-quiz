@@ -102,8 +102,6 @@ body{
 #question-prompt h2{
   text-align: center;
   font-size: 48px;
-  color: purple;
-  font-weight: bold;
   margin-top: 25px;
 }
 
@@ -128,3 +126,38 @@ body{
   float: right;
 }
 /*End Questions section*/
+
+/*Game Over Section*/
+#game-over{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+#game-over h2{
+  color: purple;
+  font-size: 64px;
+  font-weight: bolder;
+  margin: 25px 0 10px 0;
+}
+
+#game-over p{
+  font-size: 32px;
+  margin: 10px 25px;
+}
+
+#save-data{
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+#save-data input{
+  outline: none;
+  border: none;
+  font-size: 32px;
+  padding: 10px;
+  border: 2px solid gray;
+  border-radius: 10px;
+}
+/*End Game Over Section*/
