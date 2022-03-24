@@ -89,3 +89,42 @@ body{
   font-size: 36px;
 }
 /*End Start Menu*/
+
+/*Questions section*/
+#questions{
+ display: flex;
+ flex-wrap: wrap;
+ flex-direction: column;
+ align-items: center;
+ border-bottom: 3px solid purple;
+}
+
+#question-prompt h2{
+  text-align: center;
+  font-size: 48px;
+  color: purple;
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+.question-buttons{
+  display: flex;
+  flex-direction: column;
+}
+
+.question-buttons button{
+  margin: 25px 50px;
+}
+
+#feedback{
+  display: flex;
+  justify-content: space-between;
+  color: purple;
+  font-size: 32px;
+  margin: 10px 25px;
+}
+
+#time-penalty{
+  float: right;
+}
+/*End Questions section*/
