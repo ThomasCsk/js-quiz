@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 body{
@@ -161,3 +162,65 @@ body{
   border-radius: 10px;
 }
 /*End Game Over Section*/
+
+/*High Scores*/
+#high-scores-page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#high-scores-page h1{
+font-size: 64px;
+color: purple;
+}
+
+#high-scores-page ul{
+  margin: 25px 0;
+  list-style: none;
+}
+
+#high-scores-page li{
+  font-size: 32px;
+  color: violet;
+  padding: 10px 50px 10px 25px;
+  background-color: gray;
+  border: 2px solid white;
+  border-bottom: none;
+}
+
+#high-scores-page li:last-child{
+  border-bottom: 2px solid white;
+}
+/*End High Scores*/
+
+@media screen and (max-width:525px){
+  body{
+    margin: 15px;
+  }
+  
+  #question-prompt h2{
+    text-align: center;
+    font-size: 32px;
+    margin-top: 25px;
+  }
+   
+  .question-buttons{
+    display: flex;
+    flex-direction: column;
+  }
+   
+  .question-buttons button{
+    margin: 12px 25px;
+    font-size: 16px;
+  }
+  
+  #feedback{
+    display: flex;
+    justify-content: space-between;
+    color: purple;
+    font-size: 24px;
+    margin: 10px 12px;
+  }
+   
+}
