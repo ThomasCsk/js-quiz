@@ -14,7 +14,7 @@
 <div id="startup-page"> 
   <div class="sticky-bar"> <!--Highscores link and time counter-->
       <div class="highscores-link">
-        <a href="./highscores.html">View High Scores</a>
+        <button class="btn" id="view-highscores-1">View High Scores</button>
       </div>
       <div class="time-counter">
         <p>Time = 0</p>
@@ -23,9 +23,10 @@
   <div id="start-menu">
     <h1>JavaScript Coding Quiz</h1>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-      Repellendus minus aspernatur dicta maiores ipsum ex magni magnam beatae aliquid rem, 
-      voluptatum quod impedit totam dolore tenetur eius corrupti perferendis velit.
+      Welcome to my JavaScript quiz. Feel free to press the start button whenever you feel that you are ready.
+      Please note however, that this is a timed quiz. You will have 45 seconds from the time you press the start button to finish the quiz.
+      If you get a question wrong, you will lose 5 of those precious seconds. If you get a question right though, you will get 5 more seconds added on to the timer.
+      Your score will be based solely on the remaining time. Good Luck!
     </p>
     <button id="start-button" class="btn">START</button>
   </div>
@@ -36,7 +37,7 @@
 <div id="questions-page">
   <div class="sticky-bar"> <!--Highscores link and time counter-->
     <div class="highscores-link">
-      <a href="./highscores.html">View High Scores</a>
+      <button class="btn" id="view-highscores-2">View High Scores</button>
     </div>
     <div class="time-counter">
       <p id="timer">Time: 45</p>
@@ -64,7 +65,7 @@
 <div id="game-over-page">
   <div class="sticky-bar"> <!--Highscores link and time counter-->
     <div class="highscores-link">
-      <a href="./highscores.html">View High Scores</a>
+      <button class="btn" id="view-highscores-3">View High Scores</button>
     </div>
     <div class="time-counter">
       <p id="timer-end"></p>
@@ -75,12 +76,24 @@
     <p id="end-score"></p>
     <p>Please enter initials</p>
     <div id="save-data">
-      <input type="text" placeholder="Enter Initials Here"/>
-      <button type="submit" class="btn">Submit</button>
+      <input type="text" name="initials-name" placeholder="Enter Initials Here"/>
+      <button type="submit" id="save-submit" class="btn">Submit</button>
     </div>
   </div>
 </div>
   <!--End Game Over Page-->
+
+  <!--High Scores Page-->
+  <div id="high-scores-page">
+    <h1>High Scores</h1>
+    <ul id="score-list">
+    </ul>
+    <div>
+      <button class="btn" id="go-back-button">Go Back</button>
+      <button class="btn" id="highscores-reset-button">Clear High Scores</button>
+    </div>
+  </div>
+  <!--End High Scores Page-->
 
 <script src="./assets/js/script.js"></script>
 
